@@ -1,0 +1,17 @@
+extends template
+
+block vista
+  title=title
+  meta(name="description", content="This is an example of a meta description. This will often show up in search results.")
+  body
+    table#registro
+      tr
+        th Nombre
+        th Apellidos
+        th DNI
+        th Celular
+        th Pago
+    button#excel Generar Excel
+
+    script(src="../javascripts/jquery.js")
+    script(src="../javascripts/data.js")

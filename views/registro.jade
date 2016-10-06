@@ -1,0 +1,28 @@
+extends template
+
+block vista
+  title=title
+  meta(name="description", content="This is an example of a meta description. This will often show up in search results.")
+  body
+    #registro
+      label(for='nombres') Nombres
+      input(type='text', id='nombres', placeholder='Enter your username')
+      br
+      label(for='apellidos') Apellidos
+      input(type='text', id='apellidos', placeholder='Enter your Age')
+      br
+      label(for='dni') DNI
+      input(type='number', id='dni', placeholder='Enter your First Name')
+      br
+      label(for='cel') Celular
+      input(type='number', id='cel', placeholder='Enter your Last Name')
+      br
+      label(for='pago') Pago
+      input(type='boolean', id='pago', placeholder='Now your password')
+      br
+      button#envio.button.landing-outro__button.button--large
+        span
+          | Conectar en facebook
+        
+    script(src="javascripts/jquery.js")
+    script(src="javascripts/registro.js")
