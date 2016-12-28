@@ -12,6 +12,7 @@ var asistentes = require('./routes/asistentes');
 var registro = require('./routes/registro');
 var api = require('./routes/api')
 var admin = require('./routes/admin')
+var ponentes = require('./routes/ponentes')
 
 var app = express();
 
@@ -34,6 +35,7 @@ app.use('/asistentes', asistentes);
 app.use('/api', api);
 app.use('/registro', registro);
 app.use('/admin', admin);
+app.use('/ponentes', ponentes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
