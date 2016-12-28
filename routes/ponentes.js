@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
   Ponente.find(function(err, ponentes) {
   	// res.send(ponentes)
   	// res.render('ponentes', ponentes);
-  	res.render('ponentes', { data: ponentes, title: "Ponentes del VEIM" });
+  	res.render('ponentes', { data: ponentes, title: "Ponentes" });
   })
 });
 module.exports = router;
